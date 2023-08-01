@@ -8,3 +8,7 @@ This is a demo script for client
 #run script 
 npx cypress run -- headless mode
 npx cypress open -- headed mode
+
+# set-up server locally
+- Root of the folder open terminal
+- run command:  http-server -p 8000
