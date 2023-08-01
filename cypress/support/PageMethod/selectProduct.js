@@ -6,7 +6,11 @@ class selectProductToBuy {
         return cy.contains(productData.productName)
     }
     addproductIncart() {
-        return cy.get("#button")
+        return cy.get("#button button")
+    }
+
+    productName() {
+        return cy.get("#productDetails h1")
     }
 
     productDescription() {
@@ -18,7 +22,11 @@ class selectProductToBuy {
     }
 
     placeOrderButton() {
-        return cy.get("#button")
+        return cy.get("#button a")
+    }
+
+    productVerify() {
+        return cy.get("#box h3")
     }
 
 
