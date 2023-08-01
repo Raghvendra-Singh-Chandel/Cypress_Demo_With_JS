@@ -2,7 +2,7 @@
 class Login
 {
     getLoginUrl() {
-        return cy.visit('http://127.0.0.1:5500/login.html')
+        return cy.visit('http://127.0.0.1:8000/login.html')
     }
     getUsername() {
         return cy.get('#username')
