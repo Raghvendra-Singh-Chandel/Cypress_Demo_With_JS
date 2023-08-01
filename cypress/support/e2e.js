@@ -18,6 +18,7 @@ import './commands'
 import './PageCommand/loginPageCommand'
 import './PageCommand/selectproductPageCommand'
 import './PageCommand/enterDetailsPageCommand'
+import './PageCommand/paymentPageCommand'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
