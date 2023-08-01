@@ -3,7 +3,9 @@ describe("create order end to end scenario",()=> {
         cy.loginWithvalidCredentials()
     })
 
-    it ("create order",()=> {
-        
+    it.only ("create order",()=> {
+        cy.selectProductToBuy()
+        cy.placeOrder()
+        cy.fillAllDetailsToProcessedPaymentPage()
     })
 })
