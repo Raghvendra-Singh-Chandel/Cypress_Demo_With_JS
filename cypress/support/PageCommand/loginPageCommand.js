@@ -7,7 +7,7 @@ const login                    =             new Login()
 
 
 Cypress.Commands.add("loginWithvalidCredentials",()=> {
-    login.getLoginUrl(loginData.url)
+    login.getLoginUrl()
     login.getUsername().clear().type(loginData.username).should('have.value',loginData.username)
     login.getPassword().clear().type(loginData.password).should('have.value',loginData.password)
     login.getLogin().click()
